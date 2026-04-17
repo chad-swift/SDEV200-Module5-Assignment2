@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 // button is held down or released
 // Chad Swift
 // SDEV200-50P
-// Module 4 Assignment 1
+// Module 4 Assignment 2
 
 public class CircleColoring extends Application {
     @Override
@@ -40,13 +40,9 @@ public class CircleColoring extends Application {
         stage.show();
 
         // if the mouse button is pressed, make it black
-        circle.setOnMousePressed(e -> {
-            circle.setFill(Color.BLACK);
-        });
+        circle.setOnMousePressed(e -> circle.setFill(Color.BLACK));
         // if the mouse button is released, set it back to white
-        circle.setOnMouseReleased(e -> {
-            circle.setFill(Color.WHITE);
-        });
+        circle.setOnMouseReleased(e -> circle.setFill(Color.WHITE));
 
     }
 
